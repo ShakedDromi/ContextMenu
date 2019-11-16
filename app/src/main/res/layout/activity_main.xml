@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="בחר את סוג הסדרה"
+        android:textSize="30dp"
+        android:layout_weight="10"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="15">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="חשבונית"
+            android:textSize="25dp"
+            android:layout_weight="20"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <Switch
+            android:id="@+id/swch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text=""
+            android:onClick="swch"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הנדסית"
+            android:textSize="25dp"
+            android:layout_weight="20"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <EditText
+        android:id="@+id/eivar1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:hint="האיבר הראשון בסדרה"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_weight="10"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <EditText
+        android:id="@+id/diffmult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:hint=" הפרש או מכפלה"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_weight="10"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="next"
+        android:layout_weight="10"
+        android:onClick="nxt"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+    </Space>
+
+    <Button
+        android:id="@+id/creds"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="credits"
+        android:layout_weight="10"
+        android:onClick="creds"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></Space>
+
+</LinearLayout>
